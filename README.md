@@ -8,6 +8,8 @@
 
 A boilerplate for electron menubar application with integration with `React` and `Webpack`. I am using [`menubar`](https://github.com/maxogden/menubar) as a dependency to get cross-platform compatibility. It supports `MacOS`, `Windows`, and `Linux`.
 
+> Boilerplate for electron menubar app with popover.
+
 # How to use?
 
 Just clone or fork it, then delete unnecessary files and add your app components.
