@@ -6,7 +6,7 @@
 
 # electron-menubar
 
-A boilerplate for electron menubar application with integration with React and Webpack.
+A boilerplate for electron menubar application with integration with `React` and `Webpack`. I am using [`menubar`](https://github.com/maxogden/menubar) as a dependency to get cross-platform compatibility. It supports `MacOS`, `Windows`, and `Linux`.
 
 # How to use?
 
