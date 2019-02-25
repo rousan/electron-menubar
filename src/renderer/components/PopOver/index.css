@@ -1,0 +1,11 @@
+.popover {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.popover .arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}

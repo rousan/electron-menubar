@@ -1,0 +1,55 @@
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.app .top-popover {
+  flex: 0 1 auto;
+}
+
+.app .content {
+  flex: 1 1 auto;
+  background: white;
+  display: flex;
+  flex-flow: column;
+}
+
+.app .content .top-bar-container {
+  flex: 0 1 auto;
+  border-radius: inherit;
+}
+
+.app .content .tab-pages {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.app .content .tab-pages .tab1-panel-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.app .content .tab-pages .tab2-panel-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.app .content .footer-container {
+  flex: 0 1 auto;
+}
+
+.app .bottom-popover {
+  flex: 0 1 auto;
+}

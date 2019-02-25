@@ -1,0 +1,81 @@
+{
+  "name": "electron-menubar",
+  "productName": "MyApp",
+  "version": "1.0.0",
+  "description": "Boilerplate for electron menubar app",
+  "main": "./app/main.js",
+  "scripts": {
+    "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
+    "build:main": "webpack --config ./config/webpack.config.main.js",
+    "build:renderer": "webpack --config ./config/webpack.config.renderer.prod.js",
+    "start": "concurrently \"yarn start:renderer\" \"yarn start:main\"",
+    "start:main": "nodemon --exec \"yarn build:main && electron .\"",
+    "start:renderer": "webpack-dev-server --color --config ./config/webpack.config.renderer.dev.js",
+    "postinstall": "electron-builder install-app-deps package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rousan/electron-menubar.git"
+  },
+  "keywords": [
+    "electron",
+    "boilerplate",
+    "app",
+    "menubar"
+  ],
+  "author": {
+    "name": "Rousan Ali",
+    "email": "rousanali786@gmail.com",
+    "url": "https://rousan.io"
+  },
+  "contributors": [
+    {
+      "name": "Rousan Ali",
+      "email": "rousanali786@gmail.com",
+      "url": "https://rousan.io"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rousan/electron-menubar/issues"
+  },
+  "homepage": "https://github.com/rousan/electron-menubar#readme",
+  "dependencies": {
+    "electron-is": "^3.0.0",
+    "menubar": "^5.2.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.8",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.0",
+    "electron": "^4.0.5",
+    "electron-builder": "^20.38.5",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0",
+    "webpack-merge": "^4.2.1"
+  }
+}

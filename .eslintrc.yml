@@ -1,0 +1,13 @@
+extends: airbnb
+env:
+  node: true
+  browser: true
+rules:
+  import/no-extraneous-dependencies: 0
+  no-param-reassign: 0
+  react/jsx-filename-extension: 0
+  react/destructuring-assignment: 0
+  class-methods-use-this: 0
+  import/prefer-default-export: 0
+  jsx-a11y/click-events-have-key-events: 0
+  jsx-a11y/interactive-supports-focus: 0
