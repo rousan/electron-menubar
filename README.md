@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rousan/electron-menubar/master/screenshot-mac.png" alt="electron-menubar-app-mac">
+  <img width="500" src="https://raw.githubusercontent.com/rousan/electron-menubar/master/screenshot-mac.png" alt="electron-menubar-app-mac">
     <br>
     <br>
 </p>
